@@ -1,6 +1,7 @@
 package com.hendisantika.jwt.springbootsecurityjwtsample.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hendisantika.jwt.springbootsecurityjwtsample.auth.ajax.AjaxAuthenticationProvider;
 import com.hendisantika.jwt.springbootsecurityjwtsample.security.RestAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -38,12 +39,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private RestAuthenticationEntryPoint authenticationEntryPoint;
+
     @Autowired
     private AuthenticationSuccessHandler successHandler;
+
     @Autowired
     private AuthenticationFailureHandler failureHandler;
+
     @Autowired
     private AjaxAuthenticationProvider ajaxAuthenticationProvider;
+
     @Autowired
     private JwtAuthenticationProvider jwtAuthenticationProvider;
 
