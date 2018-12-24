@@ -1,5 +1,6 @@
 package com.hendisantika.jwt.springbootsecurityjwtsample.controller;
 
+import com.hendisantika.jwt.springbootsecurityjwtsample.security.model.UserContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
