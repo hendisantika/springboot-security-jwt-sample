@@ -5,6 +5,7 @@ import com.hendisantika.jwt.springbootsecurityjwtsample.auth.ajax.AjaxAuthentica
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.ajax.AjaxLoginProcessingFilter;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.JwtAuthenticationProvider;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.JwtTokenAuthenticationProcessingFilter;
+import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.SkipPathRequestMatcher;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.extractor.TokenExtractor;
 import com.hendisantika.jwt.springbootsecurityjwtsample.security.RestAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
