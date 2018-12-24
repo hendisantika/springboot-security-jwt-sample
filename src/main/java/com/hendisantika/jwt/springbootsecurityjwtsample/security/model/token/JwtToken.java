@@ -10,5 +10,6 @@ package com.hendisantika.jwt.springbootsecurityjwtsample.security.model.token;
  * Time: 05:32
  * To change this template use File | Settings | File Templates.
  */
-public class JwtToken {
+public interface JwtToken {
+    String getToken();
 }
