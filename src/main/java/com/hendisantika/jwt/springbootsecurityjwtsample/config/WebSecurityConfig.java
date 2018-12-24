@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.ajax.AjaxAuthenticationProvider;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.ajax.AjaxLoginProcessingFilter;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.JwtAuthenticationProvider;
+import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.JwtTokenAuthenticationProcessingFilter;
 import com.hendisantika.jwt.springbootsecurityjwtsample.auth.jwt.extractor.TokenExtractor;
 import com.hendisantika.jwt.springbootsecurityjwtsample.security.RestAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
