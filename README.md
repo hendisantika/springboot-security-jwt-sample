@@ -23,7 +23,7 @@ We will cover the following two scenarios:
 
 ### <a name="pre-requisites" id="pre-requisites">PRE-requisites</a>
 
-Please check out the sample code/project from the following GitHub repository: https://github.com/svlada/springboot-security-jwt before going further reading the article.
+Please check out the sample code/project from the following GitHub repository: https://github.com/hendisantika/springboot-security-jwt-sample before going further reading the article.
 
 This project is using H2 in-memory database to store sample user information. To make things easier I have created data fixtures and configured Spring Boot to automatically load them on the application startup (```/jwt-demo/src/main/resources/data.sql```).
 
