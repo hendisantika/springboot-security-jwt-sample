@@ -859,6 +859,16 @@ public class BloomFilterTokenVerifier implements TokenVerifier {
 }
 ```
 
+### Screen shot
+
+Login Page
+
+![Login Page](img/login.png "Login Page")
+
+Get API Endpoint
+
+![Get API Endpoint](img/api.png "Get API Endpoint")
+
 ### Conclusion
 
 I heard people whispering on the web that loosing a JWT token is like loosing your house keys. So be careful.
