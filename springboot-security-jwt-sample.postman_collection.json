@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "e2295ed2-3aef-4e39-961f-b555dd53487b",
+    "name": "springboot-security-jwt-sample",
+    "description": "springboot-security-jwt-sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login to get token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"hendisantika@gmail.com\",\n    \"password\": \"test1234\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get API Endpoint",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoZW5kaXNhbnRpa2FAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1BSRU1JVU1fTUVNQkVSIl0sImlzcyI6Imh0dHA6Ly9zdmxhZGEuY29tIiwiaWF0IjoxNTg2NTY3NTU1LCJleHAiOjE1ODY1Njg0NTV9.JIxQ93TCq-dja5-c-8s2bFWlwXw76GfRvw6ppswagQwfWSdpNq4Rttx1k0EFV2UFMYREG5wsEjMk8JrurhZPZQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "me"
+          ]
+        },
+        "description": "Get API Endpoint"
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
